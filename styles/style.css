@@ -4,7 +4,7 @@
     width: 1100px;
     height: 293px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* FIXME: Доделать лого, возможно стоит неправильно. Вторая часть должна быть как в рекомендациях "grid-template-columns: 1fr min-content 1fr;" */
+    grid-template-columns: 1fr min-content 1fr; /* FIXME: Доделать лого, возможно стоит неправильно. Вторая часть должна быть как в рекомендациях "grid-template-columns: 1fr min-content 1fr;" */
     align-items: center;
 }
 .header__logo {
@@ -19,13 +19,38 @@
 
 }
 
-.header__menu{} /* TODO: доделать согласно урокам, у Алисы так же есть на это свой ответ */
+.header__menu{
+    padding: 133px 36px 138px 50px;
+    width: fit-content; /* width: fit-content — это значение CSS-свойства width, которое заставляет элемент автоматически подстраивать свою ширину под размер внутреннего содержимого */
+}
 
-.header__links-list{}
+.header__links-list{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
 
-.header__links-list-item{}
+}
 
-.header__links-list-item_no-bullit{}
+.header__links-list-item{
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullet{
+    list-style-type: none;
+}
+
+.header__address {
+    display: flex;
+    width: fit-content;
+    padding: 95px 50px 100px 180px;
+}
+
+.address {
+
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+}
 
 .cover {
     padding: 0;
