@@ -60,6 +60,7 @@
     background-size: cover;
     min-height: 757px;
     position: relative;
+    margin-bottom: 90px;
 }
 
 .overlay {
@@ -67,21 +68,14 @@
     inset: 0 0 0 0;
     opacity: 60%;
     background-color: #000000;
+    z-index: 0;
 }
-
-
-
-
-
-
-
-
-
 .cover__title {
     text-transform: uppercase;
     color: #FFFFFF;
+    position: relative;
+    z-index: 1;
 } /* заголовок */
-
 
 .aligned-text {
     display: block;
@@ -128,18 +122,31 @@
 } /* НАДО */
 
 .description {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 104px;
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: 22px;
-    padding: 77px 50px 0 50px;
+    padding: 64px 50px 0 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__description-text {
+    display: block;
     word-spacing: 19px;
 }
 
 .bet-button {
+    display:block;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    width: 256px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
 
 }
 
