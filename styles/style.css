@@ -86,7 +86,7 @@
 .aligned-text {
     display: block;
     padding: 165px 50px 50px 50px;
-}  /*  для превращения строк заголовка в блочный элемент */
+} /*  для превращения строк заголовка в блочный элемент */
 
 .letter-spacing-extended {
     letter-spacing: 33px;
@@ -133,7 +133,14 @@
     color: #FFFFFF;
     font-size: 22px;
     padding: 77px 50px 0 50px;
+}
+
+.cover__description-text {
     word-spacing: 19px;
+}
+
+.bet-button {
+
 }
 
 .lots {
