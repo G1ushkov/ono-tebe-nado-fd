@@ -60,7 +60,7 @@
     background-size: cover;
     min-height: 757px;
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 180px;
 }
 
 .overlay {
@@ -151,8 +151,114 @@
 }
 
 .lots {
+    display: block;
+} /*  вся секция */
 
-}
+.lots__heading {
+    display: inline-block;
+    font-size: 42px;
+    padding-inline: 63px;
+    letter-spacing: -2px;
+} /* заголовок секции */
+
+.lots__card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin: 25px 0 25px 0;
+} /* список карточек */
+
+.lots__card-list-item {
+    display: flex;
+    width: 334px;
+    min-height: 596px;
+
+} /* пункт списка карточек */
+
+.card-link {
+    min-height: 596px;
+    text-decoration: none;
+} /* ссылка, обрамляющая карточку */
+
+.card {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    justify-content: space-between;
+} /* карточка */
+
+.card_type_film {
+    background-image: url('../images/card-lot-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 596px;
+    position: relative;
+} /* Фильм */
+
+.card_type_book {
+    background-image: url('../images/card-lot-02.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 596px;
+    position: relative;
+} /* Книга */
+
+.card_type_picture {
+    background-image: url('../images/card-lot-03.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 596px;
+    position: relative;
+} /* Картина */
+
+.card__title {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    z-index: 1;
+} /* заголовок карточки */
+
+.card__text {
+    display: flex;
+    font-size: 20px;
+    z-index: 1;
+} /* текст карточки */
+
+.lots__look-more-link {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 0 0 64px;
+    letter-spacing: 0;
+    text-underline-offset: 5px;
+} /* ссылка «Посмотреть больше» */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .about {
 
