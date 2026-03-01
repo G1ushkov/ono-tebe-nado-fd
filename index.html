@@ -146,27 +146,55 @@
 
   <footer class="footer">
 
-    <address> <!-- Адрес и телефон -->
-      <ul>
-        <li>+9 999 555 5555</li> <!-- Номер телефона -->
-        <li>info@sobaka.ge</li> <!-- Электронный адрес -->
-        <li>наб. Принсенграхт 263- 265, Амстердам</li> <!-- Адрес -->
-      </ul>
+    <address class="footer__address"> <!-- Адрес и телефон -->
+        <ul class="address">
+          <li><a href="tel:+99995555555">+9 999 555 5555</a></li> <!-- Номер телефона -->
+          <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li> <!-- Электронный адрес -->
+          <li>наб. Принсенграхт 263- 265, Амстердам</li> <!-- Адрес -->
+        </ul>
     </address>
 
-    <nav> <!-- Меню -->
-      <ul>
-        <li>главная</li>
-        <li>посмотреть лоты</li>
-        <li>об аукционе</li>
+    <nav class="footer__menu"> <!-- Меню -->
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          главная
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="#" target="_blank">посмотреть лоты</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="#" target="_blank">об аукционе</a>
+        </li>
       </ul>
     </nav>
-
-    <ul> <!-- "Список ссылок на соцсети" -->
-      <li>YouTube</li>
-      <li>VK</li>
-      <li>Pinterest</li>
-    </ul>
+    <div class="footer__social">
+      <ul class="footer__social-list"> <!-- "Список ссылок на соцсети" -->
+        <li class="footer__social-list-item">
+          <a href="#" target="_blank">
+            <img
+                    src="./images/yt.svg"
+                    alt="Youtube"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#" target="_blank">
+            <img
+                    src="./images/vk.svg"
+                    alt="VK"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#" target="_blank">
+            <img
+                    src="./images/pinterest.svg"
+                    alt="Pinterest"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
 
   </footer>
 
