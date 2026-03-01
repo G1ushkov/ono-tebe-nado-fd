@@ -20,18 +20,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    /* padding: 5px 0 0 1px; -- Поможет выровнять -- */
     gap: 5px;
     text-underline-offset: 4px;
 }
 
 .header__links-list {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 5px 0;
     gap: 32px;
     list-style: none;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .header__links-list-item{
@@ -44,25 +45,23 @@
 
 .header__address {
     display: flex;
-    padding: 0 0 0 192px;
+    padding-left: 192px;
 }
 
 .address {
-    text-underline-offset: 4px;
-    font-style: normal;
-    padding: 4px 0 0 0;
-    gap: 5px;
-    max-width: 240px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    max-width: 240px;
+    padding-top: 4px;
+    gap: 5px;
     list-style-type: none;
+    text-underline-offset: 4px;
 }
 
 .cover {
-    background-image: url('../images/cover.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url('../images/cover.jpg') no-repeat center / cover;
     min-height: 757px;
     position: relative;
     margin-bottom: 180px;
@@ -75,7 +74,9 @@
     background-color: #000000;
     z-index: 0;
 }
+
 .cover__title {
+    display: block;
     text-transform: uppercase;
     color: #FFFFFF;
     position: relative;
@@ -85,6 +86,7 @@
 .aligned-text {
     display: block;
     padding: 165px 50px 50px 50px;
+    width: 100%
 } /*  для превращения строк заголовка в блочный элемент */
 
 .letter-spacing-extended {
@@ -93,47 +95,47 @@
 
 .aligned-text_left {
     display: block;
-    text-align: left;
-    white-space: nowrap;
     width: 100%;
+    padding-top: 23px;
+    white-space: nowrap;
     overflow: hidden;
+    text-align: left;
     line-height: 71px;
-    padding: 23px 0 0 0;
     font-size: 97px;
 } /* ОНО */
 
 .aligned-text_center {
     display: block;
-    text-align: center;
-    white-space: nowrap;
     width: 100%;
+    padding-top: 64px;
+    white-space: nowrap;
     overflow: hidden;
+    text-align: center;
     line-height: 71px;
-    padding: 64px 0 0 0;
-    transform: translateX(17px);
     font-size: 97px;
+    transform: translateX(17px);
 } /* ТЕБЕ */
 
 .aligned-text_right {
     display: block;
-    text-align: end;
-    white-space: nowrap;
     width: 100%;
-    overflow: hidden;
-    line-height: 71px;
     padding: 64px 0 14px 0;
-    transform: translateX(34px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: end;
+    line-height: 71px;
     font-size: 97px;
+    transform: translateX(34px);
 } /* НАДО */
 
 .description {
     display: flex;
     align-items: center;
     gap: 104px;
+    padding: 64px 50px 0 50px;
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: 22px;
-    padding: 64px 50px 0 50px;
     position: relative;
     z-index: 1;
 }
@@ -144,15 +146,14 @@
 }
 
 .bet-button {
-    display:block;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    transform: translateY(-3px);
+    display: block;
     width: 256px;
     height: 52px;
+    background-color: transparent;
     border: 1px solid #FFFFFF;
-
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transform: translateY(-3px);
 }
 
 .lots {
@@ -172,14 +173,13 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 26px;
-    margin: 25px 0 25px 0;
+    margin: 25px 0;
 } /* список карточек */
 
 .lots__card-list-item {
     display: flex;
     width: 334px;
     min-height: 596px;
-
 } /* пункт списка карточек */
 
 .card-link {
@@ -188,11 +188,11 @@
 } /* ссылка, обрамляющая карточку */
 
 .card {
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    padding: 48px 40px;
     justify-content: space-between;
+    padding: 48px 40px;
+    color: #FFFFFF;
 } /* карточка */
 
 .card_type_film {
@@ -224,8 +224,8 @@
 
 .card__title {
     display: flex;
-    text-transform: uppercase;
     font-size: 22px;
+    text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 4px;
     z-index: 1;
@@ -247,11 +247,11 @@
 
 
 .about {
-    margin-top: 120px;
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 24px;
-    padding: 0 24px 0 24px;
+    padding: 0 24px;
+    margin-top: 120px;
 } /* вся секция */
 
 .about__column {
@@ -283,20 +283,19 @@
 
 .about__text {
     display: flex;
+    flex-wrap: wrap;
     gap: 23px;
     font-size: 20px;
-    flex-wrap: wrap;
-
 } /* блок для текстов (параграфов) секции */
 
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 50px;
     margin-top: 180px;
-    font-weight: 400;
     font-size: 18px;
-    padding: 0 50px 0 50px;
+    font-weight: 400;
 } /* подвал */
 
 .footer__address {
@@ -327,10 +326,10 @@
 .footer__social-list {
     display: flex;
     flex-direction: row;
+    gap: 48px;
     justify-content: flex-end;
     align-items: flex-start;
     list-style-type: none;
-    gap: 48px;
 } /* список ссылок на социальные сети */
 
 .footer__social-list-item {
