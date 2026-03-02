@@ -95,8 +95,6 @@
     display: block;
     width: 100%;
     padding-top: 23px;
-    white-space: nowrap;
-    overflow: hidden;
     text-align: left;
     line-height: 71px;
     font-size: 97px;
@@ -106,8 +104,6 @@
     display: block;
     width: 100%;
     padding-top: 64px;
-    white-space: nowrap;
-    overflow: hidden;
     text-align: center;
     line-height: 71px;
     font-size: 97px;
@@ -118,8 +114,6 @@
     display: block;
     width: 100%;
     padding: 64px 0 14px 0;
-    white-space: nowrap;
-    overflow: hidden;
     text-align: end;
     line-height: 71px;
     font-size: 97px;
@@ -146,12 +140,13 @@
 .bet-button {
     display: block;
     width: 256px;
-    height: 52px;
+    min-height: 52px;
     background-color: transparent;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     text-transform: uppercase;
     transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .lots {
@@ -161,6 +156,7 @@
 .lots__heading {
     display: inline-block;
     font-size: 42px;
+    text-transform: uppercase;
     padding-inline: 63px;
     letter-spacing: -2px;
 } /* заголовок секции */
@@ -186,38 +182,28 @@
 } /* ссылка, обрамляющая карточку */
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 48px 40px;
     color: #FFFFFF;
+    min-height: 596px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 } /* карточка */
 
 .card_type_film {
     background-image: url('../images/card-lot-01.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 596px;
-    position: relative;
 } /* Фильм */
 
 .card_type_book {
     background-image: url('../images/card-lot-02.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 596px;
-    position: relative;
 } /* Книга */
 
 .card_type_picture {
     background-image: url('../images/card-lot-03.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 596px;
-    position: relative;
 } /* Картина */
 
 .card__title {
@@ -292,6 +278,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 50px;
     margin-top: 180px;
+    margin-bottom: 82px;
     font-size: 18px;
     font-weight: 400;
 } /* подвал */
