@@ -12,9 +12,7 @@
     height: 95px;
 }
 
-.header__logo-image {
-
-}
+/* .header__logo-image {} не использовал */
 
 .header__menu {
     display: flex;
@@ -35,11 +33,11 @@
     box-sizing: border-box;
 }
 
-.header__links-list-item{
+.header__links-list-item {
     list-style: circle;
 }
 
-.header__links-list-item_no-bullet{
+.header__links-list-item_no-bullet {
     list-style-type: none;
 }
 
@@ -315,13 +313,9 @@
     list-style-type: none;
 } /* список пунктов меню */
 
-.footer__menu-list-item {
+/* .footer__menu-list-item {} не использовал / пункт списка меню */
 
-} /* пункт списка меню */
-
-.footer__social {
-
-} /* блок навигации социальных сетей */
+/* .footer__social {} не использовал / блок навигации социальных сетей */
 
 .footer__social-list {
     display: flex;
