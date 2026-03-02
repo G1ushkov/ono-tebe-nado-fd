@@ -85,7 +85,7 @@
     display: block;
     padding: 165px 50px 50px 50px;
     width: 100%
-} /*  для превращения строк заголовка в блочный элемент */
+} /* для превращения строк заголовка в блочный элемент */
 
 .letter-spacing-extended {
     letter-spacing: 33px;
